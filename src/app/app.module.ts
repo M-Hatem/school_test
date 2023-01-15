@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
@@ -12,7 +12,7 @@ import { TableComponent } from './components/table/table.component';
 import { QuizzesComponent } from './components/quizzes/quizzes.component';
 import { CreateQuizComponent } from './components/create-quiz/create-quiz.component';
 import { QuizListComponent } from './components/quizzes/quiz-list/quiz-list.component';
-import { ModalComponent } from './components/modal/modal.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { ModalComponent } from './components/modal/modal.component';
     QuizzesComponent,
     CreateQuizComponent,
     QuizListComponent,
-    ModalComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +30,6 @@ import { ModalComponent } from './components/modal/modal.component';
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
-    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

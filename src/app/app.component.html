@@ -1,14 +1,22 @@
-<section class="quiz-section">
-  <div class="container">
-    <nav class="breadcrumb-body">
-      <ol class="breadcrumb">
-        <li class="main-link"><a href="#">Quiz Bank</a></li>
-        <span>/</span>
-        <li class="sub-link"><a href="#">Quizzes</a></li>
-      </ol>
-    </nav>
-    <div class="body">
-      <router-outlet></router-outlet>
-    </div>
+<app-navbar></app-navbar>
+<div class="row gap-0">
+  <div class="col-2">
+    <aside>asdsadsa</aside>
   </div>
-</section>
+  <div class="col-10">
+    <section class="quiz-section">
+      <div class="container">
+        <nav class="breadcrumb-body">
+          <ol class="breadcrumb">
+            <li class="main-link"><a href="#">Quiz Bank</a></li>
+            <span>/</span>
+            <li class="sub-link"><a href="#">Quizzes</a></li>
+          </ol>
+        </nav>
+        <div class="body">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
