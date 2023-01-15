@@ -28,6 +28,38 @@
     }
   }
 
+  .modal {
+    .close-btn {
+      margin-bottom: 10px;
+      button {
+        box-shadow: none;
+      }
+    }
+    .modal-body {
+      border: 1px solid #000;
+      padding: 30px;
+      .modal-title {
+        font-size: 28px;
+        color: #215b76;
+        margin-bottom: 30px;
+      }
+      form {
+        .row {
+          margin-bottom: 30px;
+          label {
+            font: 20px;
+          }
+          textarea {
+            border-radius: 15px;
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .btn-group {
     button {
       border: none;

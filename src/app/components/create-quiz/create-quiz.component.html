@@ -31,7 +31,7 @@
       type="button"
       class="add-btn"
       data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
+      data-bs-target="#questionModal"
     >
       <i class="fa-regular fa-circle-check"></i>
       Add New Question
@@ -39,16 +39,14 @@
 
     <!-- Modal -->
     <div
-      class="modal fade"
-      id="exampleModal"
+      class="modal modal-xl fade"
+      id="questionModal"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <div class="modal-content p-4">
+          <div class="close-btn d-flex justify-content-end">
             <button
               type="button"
               class="btn-close"
@@ -56,16 +54,133 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="modal-body">
+            <h2 class="modal-title">Add Question</h2>
+            <form>
+              <div class="row gy-3">
+                <div class="col-3">
+                  <label for="topic" class="form-label">Topic</label>
+                  <input
+                    type="text"
+                    id="topic"
+                    name="topic"
+                    value="Biology Lession1"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="course" class="form-label">Course Name</label>
+                  <select name="course" id="course" class="form-select w-100">
+                    <option value="biology" selected>010-Biology</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <label for="duration" class="form-label">
+                    Question Duration
+                  </label>
+                  <input
+                    type="text"
+                    id="duration"
+                    name="duration"
+                    value="10 m"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-3">
+                  <label for="score" class="form-label">Score</label>
+                  <input
+                    type="number"
+                    id="score"
+                    name="score"
+                    value="100"
+                    class="form-control"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="question" class="form-label">Question</label>
+                  <textarea
+                    name="question"
+                    id="question"
+                    rows="3"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <div class="col-6">
+                  <label for="correct_answer" class="form-label">
+                    Correct Answer
+                  </label>
+                  <textarea
+                    rows="3"
+                    id="correct_answer"
+                    name="correct_answer"
+                    class="form-control answer"
+                  ></textarea>
+                </div>
+                <div class="col-6">
+                  <label for="wrong_answer_1" class="form-label">
+                    Wrong Answer 1
+                  </label>
+                  <textarea
+                    rows="3"
+                    id="wrong_answer_1"
+                    name="wrong_answer_1"
+                    class="form-control answer"
+                  ></textarea>
+                </div>
+                <div class="col-6">
+                  <label for="wrong_answer_2" class="form-label">
+                    Wrong Answer 2
+                  </label>
+                  <textarea
+                    rows="3"
+                    id="wrong_answer_2"
+                    name="wrong_answer_2"
+                    class="form-control answer"
+                  ></textarea>
+                </div>
+                <div class="col-6">
+                  <label for="wrong_answer_3" class="form-label">
+                    Wrong Answer 3
+                  </label>
+                  <textarea
+                    rows="3"
+                    id="wrong_answer_3"
+                    name="wrong_answer_3"
+                    class="form-control answer"
+                  ></textarea>
+                </div>
+                <div class="col-6">
+                  <label for="wrong_answer_4" class="form-label">
+                    Wrong Answer 4
+                  </label>
+                  <textarea
+                    rows="3"
+                    id="wrong_answer_4"
+                    name="wrong_answer_4"
+                    class="form-control answer"
+                  ></textarea>
+                </div>
+                <div class="col-6">
+                  <label for="wrong_answer_5" class="form-label">
+                    Wrong Answer 5
+                  </label>
+                  <textarea
+                    rows="3"
+                    id="wrong_answer_5"
+                    name="wrong_answer_5"
+                    class="form-control answer"
+                  ></textarea>
+                </div>
+              </div>
+              <div
+                class="btn-group d-flex justify-content-end align-items-center gap-3"
+              >
+                <button class="publish-btn" type="submit">
+                  Save and Publish
+                </button>
+                <button class="save-btn" type="submit">Save</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

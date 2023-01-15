@@ -14,7 +14,6 @@ import { CreateQuizComponent } from './components/create-quiz/create-quiz.compon
 import { QuizListComponent } from './components/quizzes/quiz-list/quiz-list.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
-import { QuestionsComponent } from './components/questions/questions.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +25,6 @@ import { QuestionsComponent } from './components/questions/questions.component';
     QuizListComponent,
     NavbarComponent,
     SideNavComponent,
-    QuestionsComponent,
   ],
   imports: [
     BrowserModule,
