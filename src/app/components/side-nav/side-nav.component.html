@@ -1,0 +1,44 @@
+<aside class="h-100">
+  <ul>
+    <li>
+      <a routerLink="">
+        <i class="fa-solid fa-house me-4"></i>
+        Home
+      </a>
+    </li>
+    <li>
+      <ul>
+        <li class="mb-4">
+          <a
+            [routerLink]="['/', 'quiz_bank', 'quizzes']"
+            routerLinkActive="active-main-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <i class="fa-regular fa-circle-question me-4"></i>
+            Quiz Bank
+          </a>
+        </li>
+        <li>
+          <a
+            [routerLink]="['/', 'quiz_bank', 'quizzes']"
+            routerLinkActive="active-sub-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="sub-link"
+          >
+            Quizzes
+          </a>
+        </li>
+        <li>
+          <a
+            [routerLink]="['/', 'quiz_bank', 'questions']"
+            routerLinkActive="active-sub-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="sub-link"
+          >
+            Questions
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</aside>

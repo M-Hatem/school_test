@@ -1,11 +1,11 @@
 <app-navbar></app-navbar>
-<div class="row gap-0">
-  <div class="col-2">
-    <aside>asdsadsa</aside>
-  </div>
-  <div class="col-10">
-    <section class="quiz-section">
-      <div class="container">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2 p-0">
+      <app-side-nav></app-side-nav>
+    </div>
+    <div class="col-10 p-0">
+      <section class="quiz-section">
         <nav class="breadcrumb-body">
           <ol class="breadcrumb">
             <li class="main-link"><a href="#">Quiz Bank</a></li>
@@ -16,7 +16,7 @@
         <div class="body">
           <router-outlet></router-outlet>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 </div>

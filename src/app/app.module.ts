@@ -13,6 +13,8 @@ import { QuizzesComponent } from './components/quizzes/quizzes.component';
 import { CreateQuizComponent } from './components/create-quiz/create-quiz.component';
 import { QuizListComponent } from './components/quizzes/quiz-list/quiz-list.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { QuestionsComponent } from './components/questions/questions.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     CreateQuizComponent,
     QuizListComponent,
     NavbarComponent,
+    SideNavComponent,
+    QuestionsComponent,
   ],
   imports: [
     BrowserModule,

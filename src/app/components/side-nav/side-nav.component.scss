@@ -1,0 +1,46 @@
+aside {
+  padding: 30px 0;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.75);
+  clip-path: inset(0px -7px 0px 0px);
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+    li {
+      i {
+        margin-left: 15px;
+      }
+      a {
+        display: block;
+        padding: 15px;
+        color: #7e7e7e;
+        font-size: 17px;
+        text-decoration: none;
+      }
+
+      a.sub-link {
+        padding-left: 100px;
+      }
+
+      a.active-main-link {
+        background-color: #4f94b5;
+        color: #fff;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 5px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #0f3e53;
+        }
+      }
+
+      a.active-sub-link {
+        background-color: #6ca1b9;
+        color: #fff;
+      }
+    }
+  }
+}
