@@ -1,0 +1,25 @@
+form {
+  height: 75px;
+  button {
+    width: 160px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #3885a7;
+    color: #fff;
+    border: none;
+
+    &:hover {
+      background-color: #10465d;
+    }
+  }
+
+  input {
+    border-radius: 0 8px 8px 0;
+    background-color: #f5f7fc;
+    outline: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

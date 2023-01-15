@@ -1,0 +1,53 @@
+.create-quiz-body {
+  label {
+    font-size: 24px;
+  }
+  input,
+  select {
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .add-btn {
+    border: none;
+    background-color: transparent;
+    color: #29617c;
+    margin-bottom: 30px;
+
+    &:hover {
+      color: #000;
+    }
+
+    & i {
+      margin-right: 10px;
+    }
+  }
+
+  .btn-group {
+    button {
+      border: none;
+      padding: 15px 10px;
+      border-radius: 8px;
+      color: #fff;
+    }
+
+    .save-btn {
+      background-color: #337b9d;
+      &:hover {
+        background-color: darken(#337b9d, 10%);
+      }
+    }
+
+    .publish-btn {
+      background-color: #15838d;
+      &:hover {
+        background-color: darken(#15838d, 10%);
+      }
+    }
+  }
+}

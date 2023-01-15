@@ -1,0 +1,25 @@
+.quiz-section {
+  background-color: #f8f6f6;
+  padding: 20px;
+
+  .breadcrumb-body {
+    margin: 22px;
+    font-size: 34px;
+    .breadcrumb {
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      .sub-link {
+        a {
+          color: #4f94b5;
+        }
+      }
+    }
+  }
+
+  .body {
+    padding: 60px 10px;
+    background-color: #fff;
+  }
+}

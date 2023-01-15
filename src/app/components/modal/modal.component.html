@@ -1,0 +1,16 @@
+<ng-template #info let-c="close" let-d="dismiss">
+  <div class="modal-header d-flex justify-content-between">
+    <h4 class="modal-title" id="modal-basic-title">Student Information</h4>
+    <button
+      type="button"
+      class="close-btn"
+      aria-label="Close"
+      (click)="d('Cross click')"
+    >
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="info-section"></div>
+  </div>
+</ng-template>

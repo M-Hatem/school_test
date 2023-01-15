@@ -1,0 +1,42 @@
+<div class="create-quiz-body">
+  <form>
+    <div class="row">
+      <div class="col-4">
+        <label class="form-label" for="quiz">Quiz Name</label>
+        <input type="text" class="form-control w-100" id="quiz" name="quiz" />
+      </div>
+      <div class="col-4">
+        <label class="form-label">Course Name</label>
+        <select name="course" id="course" class="form-select w-100">
+          <option value="biology" selected>010-Biology</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <label class="form-label">Class</label>
+        <select name="class" id="class" class="form-select w-100">
+          <option value="class" selected>7 Limba, 7 Aqua</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <label class="form-label" for="topic">Topic</label>
+        <input type="text" class="form-control w-100" id="topic" name="topic" />
+      </div>
+      <div class="col-4">
+        <label class="form-label" for="date">Due Date</label>
+        <input type="date" class="form-control w-100" id="date" name="date" />
+      </div>
+    </div>
+
+    <button type="button" class="add-btn">
+      <i class="fa-regular fa-circle-check"></i>
+      Add New Question
+    </button>
+
+    <app-quiz-list></app-quiz-list>
+
+    <div class="btn-group d-flex justify-content-end align-items-center gap-3">
+      <button class="publish-btn" type="submit">Save and Publish</button>
+      <button class="save-btn" type="submit">Save</button>
+    </div>
+  </form>
+</div>
